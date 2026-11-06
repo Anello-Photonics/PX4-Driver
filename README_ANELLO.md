@@ -16,12 +16,12 @@ Use the firmware image built for your specific board.
 | `EKF2_EN` | `0` — Disabled | Disables PX4's onboard EKF2 estimator |
 | `ATT_EN` | `0` — Disabled | Disables the alternative attitude estimator, if this parameter exists |
 | `SENS_IMU_MODE` | `1` | Keeps onboard IMU selection available for rate control |
-| `ANELLO_EPH` | `100` m | Assumed horizontal position uncertainty |
-| `ANELLO_EPV` | `100` m | Assumed vertical position uncertainty |
-| `ANELLO_EV` | `100` m/s | Assumed velocity uncertainty |
+| `ANELLO_EPH` | `100` m | Assumed horizontal position uncertainty (configurable)|
+| `ANELLO_EPV` | `100` m | Assumed vertical position uncertainty (configurable)|
+| `ANELLO_EV` | `100` m/s | Assumed velocity uncertainty (configurable)|
 | `SYS_HAS_GPS` | `0` | Specifies that no separate GPS receiver is installed |
 
-**The three uncertainty values are requested test settings, not measured INS accuracy. They may prevent PX4 position-control checks from passing.**
+
 These settings assume ANELLO is the only navigation source and no separate GPS receiver is installed.
 
 ## Connection And Restart
